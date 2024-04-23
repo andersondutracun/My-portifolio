@@ -18,7 +18,7 @@ const Hero = () => {
   return (
     <>
         <StyledHero>
-            <Container>
+            <Container maxWidth="lg">
             <Grid container spacing={2}>
                 <Grid item xs={12} md={4}>
                 <StyledImage src={perfil} alt="" />
@@ -26,11 +26,11 @@ const Hero = () => {
             <Grid item xs={8} md={8}>
                 <Typography color="primary" variant="h1" textAlign="center" >Anderson Dutra</Typography>
                 <Typography color="primary" variant="h2" textAlign="center" >I'm a Web Full Stack Developer</Typography>
-                <Grid container>
-                    <Grid item>
+                <Grid container display="flex" justifyContent="center">
+                    <Grid item xs={12} md={4} display="flex" justifyContent="center">
                         <button><DownloadIcon />Download CV</button>
                     </Grid>     
-                    <Grid item>
+                    <Grid item xs={12} md={4} display="flex" justifyContent="center">
                         <button><EmailIcon/>Contact me</button>
                     </Grid>             
                 </Grid>
