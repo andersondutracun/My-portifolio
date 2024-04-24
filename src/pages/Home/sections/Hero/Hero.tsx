@@ -48,7 +48,7 @@ const Hero = () => {
                             <Typography color="primary.contrastText" variant="h2" textAlign="center" >I'm a Web Developer</Typography>
                             <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <SttyledButton>
+                                    <SttyledButton onClick={() => console.log("download")}>
                                         <DownloadIcon />
                                         <Typography>
                                             Download CV
@@ -56,7 +56,7 @@ const Hero = () => {
                                     </SttyledButton>
                                 </Grid>
                                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                                    <SttyledButton>
+                                    <SttyledButton onClick={() => console.log("contact")}>
                                         <MailLockOutlined />
                                         <Typography>
                                             Contact me
